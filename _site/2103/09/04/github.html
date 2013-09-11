@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Try something new | iwork5's blog</title>
+
+  <link rel="stylesheet" href="/css/foundation.css">
+  
+
+  <script src="http:///js/vendor/custom.modernizr.js"></script>
+
+</head>
+<body>
+
+	<div class="row">
+		<div class="small-12 columns">
+			<h3>iWork5 - Blog</h3>
+			<br>关于移动互联网、数字广告市场的有用信息及iOS 开发的心得
+			<p allign =right><a href="/js/foundation/index.html">Go back</a></p>
+			<hr />
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="large-8 columns">
+			
+		
+						<h3>Github &amp; Jekyll blog</h3>
+
+<p><em>技术杂贴</em>
+Tags: github,blog, jekyll</p>
+
+<p><a href="/index.html">返回</a> </p>
+
+<p>内容：
+    1. Git配置为博客
+    2. Jekyll配置
+    3. 调试和使用</p>
+
+<h3>本地调试</h3>
+
+<p>命令行中运行&gt;&gt; Jekyll server --baseurl &#39;&#39; </p>
+
+<p>在_config.yml 中配置baseurl的问题及解决方案
+https://github.com/mojombo/jekyll/issues/332</p>
+
+<p>mjswensen commented</p>
+
+<blockquote>
+<p>“I finally figured out the trick, if you&#39;re looking for a solution with the standard URL for GitHub Pages (username.github.io/project-name/). Here&#39;s what to do:</p>
+
+<p>In _config.yml, set the baseurl option to /project-name -- note the leading slash and the absence of a trailing slash.</p>
+
+<p>Now you&#39;ll need to change the way you do links in your templates and posts, in the following two ways:</p>
+
+<p>When referencing JS or CSS files, do it like this: /path/to/css.css -- note the slash immediately following the variable (just before &quot;path&quot;).</p>
+
+<p>When doing permalinks or internal links, do it like this:  -- note that there is no slash between the two variables.</p>
+
+<p>Finally, if you&#39;d like to preview your site before committing/deploying using jekyll serve, be sure to pass an empty string to the --baseurl option, so that you can view everything at localhost:4000 normally (without /project-name getting in there to muck everything up): jekyll serve --baseurl &#39;&#39;</p>
+
+<p>This way you can preview your site locally from the site root on localhost, but when GitHub generates your pages from the gh-pages branch all the URLs will start with /project-name and resolve properly.
+”</p>
+</blockquote>
+
+<hr>
+
+<h3>Git 上传</h3>
+
+<ul>
+<li>启动git shell</li>
+<li>git init //初始化</li>
+<li>git checkout --orphan gh-pages   //checkout a branch or paths to the working tree</li>
+<li><p>git add . //add file contents to the index</p></li>
+<li><p>git commit -m &quot;comments here&quot; //record changes to the repository</p></li>
+<li><p>git push origin gh-pages  //udpate remote refs along with associated objects</p></li>
+</ul>
+
+<hr>
+
+					
+		
+		</div>
+
+		<div class="large-4 columns">
+			<h4>About</h4>
+			<p>We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
+
+			<h4>Other Resources</h4>
+			<p>Once you've exhausted the fun in this document, you should check out:</p>
+			<ul class="disc">
+				<li><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</li>
+				<li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</li>
+				<li><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</li>
+			</ul>
+		</div>
+	</div>
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'http:///js/vendor/zepto' : 'http:///js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+  <script src="http:///js/foundation.min.js"></script>
+  <!--
+  
+  <script src="http:///js/foundation/foundation.js"></script>
+  
+  <script src="http:///js/foundation/foundation.alerts.js"></script>
+  
+  <script src="http:///js/foundation/foundation.clearing.js"></script>
+  
+  <script src="http:///js/foundation/foundation.cookie.js"></script>
+  
+  <script src="http:///js/foundation/foundation.dropdown.js"></script>
+  
+  <script src="http:///js/foundation/foundation.forms.js"></script>
+  
+  <script src="http:///js/foundation/foundation.joyride.js"></script>
+  
+  <script src="http:///js/foundation/foundation.magellan.js"></script>
+  
+  <script src="http:///js/foundation/foundation.orbit.js"></script>
+  
+  <script src="http:///js/foundation/foundation.reveal.js"></script>
+  
+  <script src="http:///js/foundation/foundation.section.js"></script>
+  
+  <script src="http:///js/foundation/foundation.tooltips.js"></script>
+  
+  <script src="http:///js/foundation/foundation.topbar.js"></script>
+  
+  <script src="http:///js/foundation/foundation.interchange.js"></script>
+  
+  <script src="http:///js/foundation/foundation.placeholder.js"></script>
+  
+  <script src="http:///js/foundation/foundation.abide.js"></script>
+  
+  -->
+  
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>
